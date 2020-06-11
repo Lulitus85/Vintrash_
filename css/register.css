@@ -1,0 +1,287 @@
+/* ESTILOS REGISTER */
+.register{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 13%;
+    text-align: center;
+
+    /* Animacion modal*/
+    position: relative;
+    animation-name: modal;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.cajita2{
+  width: 40%;
+    border: 16px solid black;
+    padding-bottom: 2%;
+    margin-top: 10%;
+}
+
+@keyframes modal {
+    0% {left: -1000px;}
+    100%{left:0;}
+  }
+
+/* Fin de animacion modal*/
+
+.register h1{
+    font-family: 'Wrestlemania',Arial, Helvetica, sans-serif;
+    margin-bottom: 0.2em;
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    margin-top: 1em;
+  }
+
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+form input{
+    padding: 0.8em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    outline: none;
+}
+
+form input::placeholder{
+    font-size:  1.3em;
+
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: 400ms;
+
+}
+
+.ldob{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#757575;
+    margin: 0;
+
+}
+
+.dob{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dob select{
+    padding: 0.8em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    outline: none;
+
+}
+
+button{
+    text-align: center;
+    font-family: 'Wrestlemania',Arial, Helvetica, sans-serif;
+    color:white;
+    align-self:center;
+    padding:0.1em 1em;
+    border: none;
+    background: black;
+    border-radius: 10px;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    outline: none;
+    cursor: pointer;
+/* Animacion boton */
+    opacity: 0;
+    animation-name: button;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+
+}
+
+@keyframes button {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+button:hover{
+    color: red;
+    transition:450ms;
+}
+/* Fin de animacion boton*/
+
+
+/* -----------------------MEDIAQUERIES---------------------- */
+
+@media (min-width: 320px) and (max-width: 450px){
+
+    .register{
+      padding: 0;
+    }
+
+    .cajita2{
+      width: 100vw;
+      border: none;
+    }
+    form input{
+        margin-bottom: 0.7em;
+    }
+
+    .dob{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 10%;
+    }
+
+    .ldob{
+        padding-bottom: 0.6em;
+    }
+
+    .dob select:nth-child(2){
+        margin-right: 0.7em;
+        margin-left: 0.7em;
+    }
+    .dob select{
+        margin:0;
+        padding: 0.8em 0;
+    }
+
+    .DOBMonth select{
+      margin: 0 0.5em;
+    }
+
+    button{
+      margin-bottom: 20%;
+    }
+
+    .dob select{
+      background-color: white;
+    }
+
+   }
+
+@media (min-width: 451px) and (max-width: 767px) {
+
+  .register{
+    padding: 0;
+  }
+  .cajita2{
+    width: 100vw;
+    border: none;
+  }
+
+    form input{
+        margin-bottom: 0.7em;
+    }
+
+    .ldob{
+        padding-bottom: 0.6em;
+    }
+
+    .dob select:nth-child(2){
+        margin-right: 0.7em;
+        margin-left: 0.7em;
+    }
+
+    .dob{
+        margin-bottom:0.8em;
+
+    }
+
+    .dob select{
+      background-color: white;
+    }
+
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .register{
+    padding: 0;
+  }
+
+  .cajita2{
+    width: 60vw;
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+  }
+
+    form input{
+        margin-bottom: 0.7em;
+    }
+
+    .ldob{
+        padding-bottom: 0.6em;
+    }
+
+    .dob select:nth-child(2){
+        margin-right: 0.7em;
+        margin-left: 0.7em;
+    }
+
+    .dob{
+        margin-bottom:0.8em;
+    }
+
+     .phrase{
+        font-size: 1.3em;
+    }
+    .logo img {
+        width: 20%;
+    }
+
+    .dob select{
+      background-color: white;
+    }
+   }
+
+   @media (min-width: 980px){
+
+     .register{
+       padding: 0;
+     }
+     .cajita2{
+       width: 50vw;
+       margin-top: 25vh;
+       margin-bottom: 10vh;
+     }
+
+    form input{
+        margin-bottom: 0.7em;
+    }
+
+    .ldob{
+        padding-bottom: 0.6em;
+    }
+
+    .dob select:nth-child(2){
+        margin-right: 0.7em;
+        margin-left: 0.7em;
+    }
+
+    .dob{
+        margin-bottom:0.8em;
+    }
+
+        .dob select{
+          background-color: white;
+        }
+
+   }
+/*FIN ESTILOS REGISTER*/
